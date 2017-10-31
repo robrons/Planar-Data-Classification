@@ -167,3 +167,9 @@ def predict(parameters, X):
     predictions = A2 > 0.5
     
     return predictions
+
+#bulding the model
+parameters = nn_model(X, Y, n_h = 4, num_iterations = 10000, print_cost=True)
+
+#building the prediction for the model. 
+plot_decision_boundary(lambda x: predict(parameters, x.T), X, Y)
