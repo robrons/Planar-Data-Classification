@@ -160,3 +160,10 @@ def nn_model(X, Y, n_h, num_iterations = 10000, print_cost=False):
             print ("Cost after iteration %i: %f" %(i, cost))
 
     return parameters
+
+def predict(parameters, X):
+   
+    A2, cache = forward_propagation(X, parameters)
+    predictions = A2 > 0.5
+    
+    return predictions
