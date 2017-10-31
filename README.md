@@ -9,8 +9,8 @@ accuracy of deep neural networks.
 * Compute the accuracy for hidden units of sizes ranging from 1 - 50. 
 ### Implementation
 #### Inital Data Set
-* ![InitData](https://github.com/robrons96/Planar-Data-Classification/blob/master/Images/InitalDataSet.png)
+![InitData](https://github.com/robrons96/Planar-Data-Classification/blob/master/Images/InitalDataSet.png)
 #### Final Result 
-* ![InitData](https://github.com/robrons96/Planar-Data-Classification/blob/master/Images/hl4.png)
+![InitData](https://github.com/robrons96/Planar-Data-Classification/blob/master/Images/hl4.png)
 #### Results for Diffrent Hidden Layer Sizes (We see overfitting of data especially at deeper layers.)
-* ![InitData](https://github.com/robrons96/Planar-Data-Classification/blob/master/Images/hl3.png)
+![InitData](https://github.com/robrons96/Planar-Data-Classification/blob/master/Images/hl3.png)
