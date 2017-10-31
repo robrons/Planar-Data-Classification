@@ -102,3 +102,28 @@ def compute_cost(A2, Y, parameters):
              "db2": db2}
     
     return grads
+
+def update_parameters(parameters, grads, learning_rate = 1.2):
+   
+    W1 = parameters["W1"]
+    b1 = parameters["b1"]
+    W2 = parameters["W2"]
+    b2 = parameters["b2"]
+   
+    dW1 = grads["dW1"]
+    db1 = grads["db1"]
+    dW2 = grads["dW2"]
+    db2 = grads["db2"]
+   
+
+    W1 = W1 - np.multiply(learning_rate, dW1)
+    b1 = b1 - np.multiply(learning_rate, db1)
+    W2 = W2 - np.multiply(learning_rate, dW2)
+    b2 = b2 - np.multiply(learning_rate, db2)
+    
+    parameters = {"W1": W1,
+                  "b1": b1,
+                  "W2": W2,
+                  "b2": b2}
+    
+    return parameters
